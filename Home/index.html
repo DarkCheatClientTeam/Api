@@ -13,6 +13,7 @@
             background-color: #0b0b0b;
             overflow: hidden;
             color: white;
+            position: relative;
         }
 
         /* Эффекты молний */
@@ -27,12 +28,15 @@
 
         .lightning {
             position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             background: url('https://cdn.pixabay.com/photo/2017/07/22/19/40/lightning-2530216_1280.png') no-repeat center center;
             background-size: cover;
             opacity: 0;
             animation: lightning 0.3s ease-in-out infinite;
+            pointer-events: none; /* Отключает взаимодействие с молниями */
         }
 
         .lightning:nth-child(2) {
@@ -53,6 +57,8 @@
             padding-left: 20px;
             box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
             animation: fadeIn 2s ease-in;
+            position: relative;
+            z-index: 1; /* Приоритет на переднем плане */
         }
 
         .header h1 {
@@ -66,12 +72,13 @@
             text-align: center;
             margin-top: 100px;
             animation: fadeIn 3s ease-in;
+            z-index: 1; /* Поверх молний */
+            position: relative;
         }
 
         .main-content h2 {
             font-size: 36px;
             margin-bottom: 20px;
-            animation: fadeIn 3s ease-in-out;
         }
 
         .main-content p {
@@ -87,7 +94,6 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            animation: fadeIn 3.5s ease-in-out;
         }
 
         .button {
@@ -101,6 +107,8 @@
             display: flex;
             align-items: center;
             transition: background-color 0.3s;
+            position: relative;
+            z-index: 2; /* Поверх молний */
         }
 
         .button:hover {
@@ -148,7 +156,7 @@
                     Join Discord
                 </button>
             </a>
-            <a href="https://raw.githubusercontent.com/NecroxisTeam/Necroxis_Executor/main/Necroxis%201.1.zip" target="_blank">
+            <a href="https://raw.githubusercontent.com/NecroxisTeam/Necroxis_Executor/main/Necroxis%201.0.zip" target="_blank">
                 <button class="button">
                     <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Download Icon">
                     Get Necroxis
