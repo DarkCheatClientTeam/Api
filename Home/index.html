@@ -76,6 +76,27 @@
             gap: 20px;
             margin-top: 30px;
         }
+        
+        .faq {
+            text-align: left;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(28, 28, 28, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(101, 33, 191, 0.5);
+            animation: zoomIn 2s ease-in-out;
+        }
+
+        .faq h3 {
+            color: #5707f7;
+            margin-bottom: 10px;
+        }
+
+        .faq p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
 
         .button {
             background: linear-gradient(90deg, #540099, #7604d4);
@@ -134,23 +155,28 @@
     </style>
 </head>
 <body>
-    <div class="header">
+        <div class="header">
         <h1>Necroxis Community</h1>
     </div>
 
-    <div class="buttons">
-        <a href="#" class="button">Join Discord</a>
-        <button class="button" onclick="showNotification()">Get Necroxis</button>
-    </div>
+    <div class="main-content">
+        <h2>Welcome To Necroxis Website!</h2>
+        <p>Whats Necroxis? Necroxis - New Best Exploiting Community, Thats Can Share They're Owns Powers Of Exploiting With They're Owns Executor And Remaked Fluxus Executor!</p>
 
-    <div id="notification">
-        <span class="close-btn" onclick="closeNotification()">×</span>
-        <p>Select the Project You Want to Receive:</p>
-        <div class="buttons-inside">
-            <a href="#" class="button">Exploit</a>
-            <a href="#" class="button">Scripts</a>
+        <div class="faq">
+            <h3>FAQ - Quick Answers</h3>
+            <p><strong>Q: Is Necroxis Exploit Safe?</strong><br>A: Yes. Our exploit does not contain doxx programs/warriors/Trojans/etc., otherwise everything will depend on forlorn and cloudy API.</p>
+            <p><strong>Q: Whats Games Supports Our Script?</strong><br>A: At the moment, the script only supports Murder Mystery 2, but will soon support Doors.</p>
+            <p><strong>Q: Where can I download Necroxis Exploit/Script?</strong><br>A: At the bottom of this site you will find the “Get Necroxis” button and select any section.</p>
         </div>
-    </div>
+
+        <div class="buttons">
+            <a href="https://discord.gg/RgqAWu2ZEZ" target="_blank" class="button">
+                <img src="https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png" alt="Discord">
+                Join Discord
+            </a>
+            <button class="button" onclick="showNotification()">Get Necroxis</button>
+        </div>
 
     <script>
         function showNotification() {
