@@ -1,193 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Necroxis Community</title>
-    <style>
-        /* Основные стили */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body, html {
-            font-family: 'Arial', sans-serif;
-            background-color: #0b0b0b;
-            color: #fff;
-            overflow-x: hidden;
-            height: 100%;
-        }
-
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://cdn.pixabay.com/photo/2020/01/09/20/32/technology-4754530_1280.jpg') center/cover no-repeat;
-            filter: brightness(0.5);
-            z-index: -2;
-        }
-
-        body::after {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://cdn.pixabay.com/photo/2019/08/12/18/00/digital-4402797_1280.png') center/cover no-repeat;
-            opacity: 0.2;
-            animation: floatBackground 10s infinite linear;
-            z-index: -1;
-        }
-
-        @keyframes floatBackground {
-            from { transform: translateY(0); }
-            to { transform: translateY(-20px); }
-        }
-
-        .header {
-            width: 100%;
-            height: 70px;
-            background-color: rgba(28, 28, 28, 0.9);
-            display: flex;
-            align-items: center;
-            padding-left: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-            border-bottom: 2px solid #5707f7;
-            position: sticky;
-            top: 0;
-            z-index: 1;
-        }
-
-        .header h1 {
-            font-size: 24px;
-            color: #5707f7;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        .buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        
-        .faq {
-            text-align: left;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: rgba(28, 28, 28, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(101, 33, 191, 0.5);
-            animation: zoomIn 2s ease-in-out;
-        }
-
-        .faq h3 {
-            color: #5707f7;
-            margin-bottom: 10px;
-        }
-
-        .faq p {
-            margin: 10px 0;
-            line-height: 1.5;
-        }
-
-        .button {
-            background: linear-gradient(90deg, #540099, #7604d4);
-            color: white;
-            padding: 12px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            box-shadow: 0 5px 15px rgba(101, 33, 191, 0.5);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 10px 20px rgba(101, 33, 191, 0.7);
-        }
-
-        #notification {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.9);
-            color: white;
-            padding: 20px 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            z-index: 10;
-        }
-
-        #notification .close-btn {
-            position: absolute;
-            top: 5px;
-            right: 10px;
-            font-size: 18px;
-            cursor: pointer;
-            color: red;
-        }
-
-        .buttons-inside {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 15px;
-        }
-
-        .buttons-inside .button {
-            flex: 1;
-            margin: 0 5px;
-            text-align: center;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Necroxis - Roblox Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div class="header">
-        <h1>Necroxis Community</h1>
-    </div>
-
-    <div class="main-content">
-        <h2>Welcome To Necroxis Website!</h2>
-        <p>Whats Necroxis? Necroxis - New Best Exploiting Community, Thats Can Share They're Owns Powers Of Exploiting With They're Owns Executor And Remaked Fluxus Executor!</p>
-
-        <div class="faq">
-            <h3>FAQ - Quick Answers</h3>
-            <p><strong>Q: Is Necroxis Exploit Safe?</strong><br>A: Yes. Our exploit does not contain doxx programs/warriors/Trojans/etc., otherwise everything will depend on forlorn and cloudy API.</p>
-            <p><strong>Q: Whats Games Supports Our Script?</strong><br>A: At the moment, the script only supports Murder Mystery 2, but will soon support Doors.</p>
-            <p><strong>Q: Where can I download Necroxis Exploit/Script?</strong><br>A: At the bottom of this site you will find the “Get Necroxis” button and select any section.</p>
+    <header>
+        <div class="logo">
+            <h1>Necroxis</h1>
+            <p>Исследуй мир и побеждай врагов в захватывающей игре!</p>
         </div>
+    </header>
 
-        <div class="buttons">
-            <a href="https://discord.gg/RgqAWu2ZEZ" target="_blank" class="button">
-                <img src="https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png" alt="Discord">
-                Join Discord
-            </a>
-            <button class="button" onclick="showNotification()">Get Necroxis</button>
-        </div>
+    <section class="intro">
+        <h2>О игре</h2>
+        <p>Добро пожаловать в Necroxis — приключенческую игру, в которой вам предстоит исследовать тёмные уголки мира и сражаться с мифическими существами. Присоединяйтесь к тысячам игроков прямо сейчас!</p>
+        <a href="https://www.roblox.com/games/123456789/Necroxis" class="play-button">Играть в Necroxis</a>
+    </section>
 
-    <script>
-        function showNotification() {
-            const notification = document.getElementById('notification');
-            notification.style.display = 'block';
-        }
+    <section class="features">
+        <h2>Особенности игры</h2>
+        <ul>
+            <li>Эпичные сражения с монстрами</li>
+            <li>Множество уникальных локаций</li>
+            <li>Гибкая система прокачки</li>
+            <li>Поддержка мультиплеера</li>
+        </ul>
+    </section>
 
-        function closeNotification() {
-            const notification = document.getElementById('notification');
-            notification.style.display = 'none';
-        }
-    </script>
+    <footer>
+        <p>&copy; 2025 Necroxis. Все права защищены.</p>
+    </footer>
 </body>
 </html>
